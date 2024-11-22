@@ -18,7 +18,18 @@ body {
     font-family: Monaco, sans-serif;
 }
 
+section {
+    height: 100vh;
+    /* padding-top: 20vh; */
+}
+
 /* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -27,7 +38,11 @@ body {
     padding: 1rem 2rem;
     margin: 2rem 10rem;
     border-radius: 50px;
-    /* position: sticky; */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.transparent {
+    background-color: rgba(0, 31, 84, 0.8);
 }
 
 .logo {
@@ -46,4 +61,31 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+/* Profile */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 4vh;
+    margin: 0 5rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    margin: auto 0;
+}
+
+.profile-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon {
+    width: 2rem;
 }

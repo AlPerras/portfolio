@@ -11,25 +11,41 @@
     -tittle on the left
     -nav links on the right
     -nav links drop to section -->
-    <div class="navbar">
-        <div class="logo">Alexandre Perras</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+    <header>
+        <nav id="navbar" class="navbar">
+            <div class="logo">Alexandre Perras</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Profile
     -img on left
     -name on right
     -contact and resume button under name -->
     <section id="profile">
-
+        <img src="./images/my_profile.jpeg" alt="profile picture" class="profile-img">
+        <div class="profile-content">
+            <p class="profile-p1">Hello I'm</p>
+            <h1 class="profile-title">Alexandre Perras</h1>
+            <p class="profile-p1">FullStack Developer</p>
+            <div class="button-container">
+                <button><a href="">Download CV</a></button>
+                <button><a href="">Contact Info</a></button>
+            </div>
+            <div class="social-container">
+                <img src="./images/linkedin.png" alt="" class="icon">
+                <img src="./images/github.png" alt="" class="icon">
+            </div>
+        </div>
     </section>
+
     <section id="about">
-        <div class="title">About Me</div>
+        <h1 class="about-title">About Me</h1v>
         <p>Hi, I'm <strong>Alexandre Perras</strong>, an aspiring entrepreneur and engineer with a passion for innovation and
             problem-solving.
             Currently based in Australia, I'm exploring the intersection of technology, creativity, and business. I enjoy
@@ -55,5 +71,6 @@
     <section id="projects"></section>
     <section id="contact"></section>
     <div class="footer"></div>
+    <script src="script.js"></script>
 </body>
 </html>
